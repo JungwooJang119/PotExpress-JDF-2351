@@ -1,0 +1,52 @@
+.phone {
+    position: relative;
+    width: 390px;
+    height: 844px;
+    left: 50%;
+    transform: translate(-50%);
+
+    border: 2px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.notification, .order {
+    position: absolute;
+    background-color: palegreen;
+    border: 0px;
+    border-radius: 10px;
+    width: 95%;
+    left: 2.5%;
+}
+
+.notification {
+    top: 15px;
+}
+
+.order {
+    bottom: 0px;
+}
+
+h1 {
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 1.75em;
+    line-height: 1.5em;
+}
+
+p {
+    font-family: Helvetica;
+    text-align: center;
+    line-height: 1.1em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+u {
+    color: dodgerblue;
+}
