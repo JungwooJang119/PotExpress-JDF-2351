@@ -37,7 +37,7 @@ h1 {
 p {
     font-family: Helvetica;
     text-align: center;
-    line-height: 1.1em;
+    line-height: 1.4em;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -47,6 +47,6 @@ iframe {
     height: 100%;
 }
 
-u {
+a {
     color: dodgerblue;
 }
