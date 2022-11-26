@@ -1,7 +1,7 @@
 import React from 'react';
 import './Page2.css'
 
-export const Page2 = ({onClickBack, savedName, savedStrain, orderNum, savedAddress}) => { 
+export const Page2 = ({onClickBack, savedName, savedStrain, orderNum, savedAddress, savedState}) => { 
     return (
     <div>
 
@@ -14,7 +14,7 @@ export const Page2 = ({onClickBack, savedName, savedStrain, orderNum, savedAddre
 
         <div id="instructions">You can now go for the pickup. Make sure your GPS is on that that we can update the seller</div>
 
-        <div id="location">You are currently at {savedAddress}</div>
+        <div id="location">You are currently at {savedAddress}, {savedState}</div>
 
         <div> <img src='https://c8.alamy.com/comp/C2THCY/coconuts-palm-tree-perspective-view-from-floor-high-up-C2THCY.jpg'
         alt = "Map" width="100" height="130" style = {{position:'absolute', left:'20px', top:'670px',}}/> </div>
