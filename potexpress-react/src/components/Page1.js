@@ -24,7 +24,7 @@ export const Page1 = ({onClickNext, addName, addAddress, addState}) => {
             alt = "Logo 2" style = {{position:'relative', top:'625px', alignSelf: 'center'}}
             width = "350px" height = "250px"/> </div>
 
-            <div> <button onClick={textFunction} id="nextButton">Next</button> </div>
+            <div> <button onClick={textFunction} id="nextButton">Select Order</button> </div>
 
             <div> 
                 <div id="name">Name</div>

@@ -13,6 +13,11 @@ export const SelectPage = ({onClickProceed, addStrain}) => {
         onClickProceed();
     }
 
+    function button3Handle() {
+        addStrain("Hybrid");
+        onClickProceed();
+    }
+
     return (
     <div>
 
@@ -39,6 +44,8 @@ export const SelectPage = ({onClickProceed, addStrain}) => {
 
         <div id="Box1"></div>
         <div id="Box2"></div>
+        <div id="Box3"></div>
+        <div id="Box4"></div>
 
         <div> <img src='https://w0.peakpx.com/wallpaper/309/70/HD-wallpaper-nice-view-beach-night.jpg'
         alt = "Map" width="120" height="120" style = {{position:'absolute', left:'25px', top:'410px',}}/> </div>
@@ -51,7 +58,7 @@ export const SelectPage = ({onClickProceed, addStrain}) => {
 
         <div id="ProdPrice1">Price: 20.00</div>
 
-        <div>  <button onClick={button1Handle} id="AddButton1">Add</button> </div>
+        <div>  <button onClick={button1Handle} id="AddButton1">Place Order</button> </div>
 
         <div> <img src='https://images.unsplash.com/photo-1584432743501-7d5c27a39189?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmljZSUyMHZpZXd8ZW58MHx8MHx8&w=1000&q=80'
         alt = "Map" width="120" height="120" style = {{position:'absolute', left:'25px', top:'665px',}}/> </div>
@@ -64,7 +71,34 @@ export const SelectPage = ({onClickProceed, addStrain}) => {
 
         <div id="ProdPrice2">Price: 10.00</div>
 
-        <div>  <button onClick={button2Handle} id="AddButton2">Add</button> </div>
+        <div>  <button onClick={button2Handle} id="AddButton2">Place Order</button> </div>
+
+
+        <div> <img src='https://cache.desktopnexus.com/thumbseg/144/144368-bigthumbnail.jpg'
+        alt = "Map" width="120" height="120" style = {{position:'absolute', left:'25px', top:'920px',}}/> </div>
+
+        <div id="ProdName3">Name: Top Notch pot good smell</div>
+
+        <div id="ProdStrain3">Strain: Hybrid</div>
+
+        <div id="ProdWeight3">Weight: 3 Grams</div>
+
+        <div id="ProdPrice3">Price: 15.00</div>
+
+        <div>  <button onClick={button3Handle} id="AddButton3">Place Order</button> </div>
+
+        <div> <img src='http://images.all-free-download.com/images/graphiclarge/beautiful_nature_landscape_05_hd_picture_166223.jpg'
+        alt = "Map" width="120" height="120" style = {{position:'absolute', left:'25px', top:'1175px',}}/> </div>
+
+        <div id="ProdName4">Name: Top Notch pot good smell</div>
+
+        <div id="ProdStrain4">Strain: Hybrid</div>
+
+        <div id="ProdWeight4">Weight: Quarter</div>
+
+        <div id="ProdPrice4">Price: 30.00</div>
+
+        <div>  <button onClick={button3Handle} id="AddButton4">Place Order</button> </div>
 
     </div>
     

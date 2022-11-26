@@ -21,6 +21,14 @@ export const Page2 = ({onClickBack, savedName, savedStrain, orderNum, savedAddre
         width="414" height="448" style={{border:'0'}} loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="map"></iframe>
         </div>
 
+        {/* <div>
+            <a href="https://www.google.com/maps/@33.764772,-84.404701,14z"
+            target="_blank" id="MapLink" rel="noreferrer">
+                <img src="https://www.adster.ca/wp-content/uploads/2013/04/google-maps.jpg" alt="Maps"
+                width='50px' height='50px' syle={{left:'100px', right:'100px'}}></img>
+            </a>
+        </div> */}
+
         {/* &output=embed */}
 
         <div> <img src='https://c8.alamy.com/comp/C2THCY/coconuts-palm-tree-perspective-view-from-floor-high-up-C2THCY.jpg'
