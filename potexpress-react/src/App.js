@@ -9,13 +9,14 @@ const App = () => {
   // hooks useState and useEffect are my friend
   const [inputName, setName] = useState('');
   const [inputStrain, setStrain] = useState('');
+  const [inputAddress, setAddress] = useState('');
   const [order, setOrder] = useState(0);
 
   const handleClick = () => {
-    if (page == 2) {
+    if (page === 2) {
       setName('');
       setPage(1);
-    } else if (page == 1) {
+    } else if (page === 1) {
       /*
       if (!inputName) {
         setPage(3);
@@ -30,12 +31,13 @@ const App = () => {
   }
 
   const Screen = () => {
-    if (page == 1) {
-      return <Page1 onClickNext={handleClick} addName={setName} addStrain={setStrain}/>
-    } else if (page == 2) {
-      return <Page2 onClickBack={handleClick} savedName={inputName} savedStrain={inputStrain} orderNum={order}/>
-    } else if (page == 3) {
-      return <ErrorPage onClickNext={handleClick} addName={setName} addStrain={setStrain}/>
+    if (page === 1) {
+      return <Page1 onClickNext={handleClick} addName={setName} addStrain={setStrain} addAddress={setAddress}/>
+    } else if (page === 2) {
+      return <Page2 onClickBack={handleClick} savedName={inputName} savedStrain={inputStrain} orderNum={order} savedAddress={inputAddress}/>
+    } else if (page === 3) {
+      return <ErrorPage onClickNext={handleClick} addName={setName} addStrain={setStrain} addAddress={setAddress}
+      savedName={inputName} savedAddress={inputAddress}/>
     }
   }
 

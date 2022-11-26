@@ -1,11 +1,12 @@
 import React from 'react';
 import './Page1.css'
 
-export const Page1 = ({onClickNext, addName, addStrain}) => { 
+export const Page1 = ({onClickNext, addName, addStrain, addAddress}) => { 
 
     function textFunction() {
         addName(document.getElementById("nameBox").value);
         addStrain(document.getElementById("strainBox").value);
+        addAddress(document.getElementById("addressBox").value);
         onClickNext();
     }
 
