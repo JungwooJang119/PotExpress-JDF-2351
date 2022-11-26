@@ -65,8 +65,8 @@
 
 #mainText {
     font-size: 50px;
-    position: relative;
-    text-align: center;
-    top: 130px;
+    position: absolute;
+    margin-left: 30px;
+    top: 100px;
 }
 

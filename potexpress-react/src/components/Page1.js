@@ -1,5 +1,6 @@
 import React from 'react';
 import './Page1.css'
+import logo from "./Green-2.jpeg"
 
 export const Page1 = ({onClickNext, addName, addAddress, addState}) => { 
 
@@ -12,7 +13,17 @@ export const Page1 = ({onClickNext, addName, addAddress, addState}) => {
 
     return (
         <div>
+
+            <div> 
+                <img src = {logo} alt = "Logo 1" style = {{position:'absolute', top:'85px', right:'20px'}}
+        width = "100" height = "100"/>
             <div id="mainText">PotExpress</div>
+            </div>
+
+            <div> <img src = "https://static.vecteezy.com/system/resources/previews/005/632/792/original/illustration-line-drawing-a-image-of-two-businessmen-shaking-hands-businessperson-negotiations-or-join-business-are-illustrated-by-a-close-handshake-between-two-hand-men-isolated-on-white-background-free-vector.jpg"
+            alt = "Logo 2" style = {{position:'relative', top:'625px', alignSelf: 'center'}}
+            width = "350px" height = "250px"/> </div>
+
             <div> <button onClick={textFunction} id="nextButton">Next</button> </div>
 
             <div> 
