@@ -1,22 +1,34 @@
 import React from 'react';
 import './SelectPage.css'
+import Axios from 'axios'
 
-export const SelectPage = ({onClickProceed, addStrain}) => { 
+export const SelectPage = ({onClickProceed, addStrain, addName}) => { 
 
     function button1Handle() {
         addStrain("Indica");
+        updateStrain("Indica");
         onClickProceed();
     }
 
     function button2Handle() {
         addStrain("Sativa");
+        updateStrain("Sativa");
         onClickProceed();
     }
 
     function button3Handle() {
         addStrain("Hybrid");
+        updateStrain("Hybrid");
         onClickProceed();
     }
+
+    const updateStrain = (theStrain) => {
+        //console.log(theStrain);
+        Axios.put('http://localhost:3001/api/update/', {
+          inputName: addName,
+          inputStrain: theStrain,
+        });
+      }
 
     return (
     <div>
