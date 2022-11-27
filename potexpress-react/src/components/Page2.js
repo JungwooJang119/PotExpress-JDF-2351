@@ -1,7 +1,7 @@
 import React from 'react';
 import './Page2.css'
 
-export const Page2 = ({onClickBack, savedStrain, orderNum, savedAddress, savedState, sellerAddress, currentLocation}) => {
+export const Page2 = ({onClickBack, savedStrain, orderNum, savedAddress, sellerAddress, currentLocation}) => {
     return (
     <div>
 

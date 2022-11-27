@@ -1,7 +1,7 @@
 import React from 'react';
 import './SelectPage.css'
 
-export const SelectPage = ({onClickProceed, addStrain}) => { 
+export const SelectPage = ({onClickProceed, addStrain, onClickBack}) => { 
 
     function button1Handle() {
         addStrain("Indica");
@@ -18,10 +18,23 @@ export const SelectPage = ({onClickProceed, addStrain}) => {
         onClickProceed();
     }
 
+    function backButtonHandle() {
+        onClickBack();
+    }
+
     return (
     <div>
 
         <div id="SPTitle">Select Strain</div>
+
+         {/* <div>  <button onClick={backButtonHandle}> 
+        <img src='https://cdn1.iconfinder.com/data/icons/arrows-4/512/arrow_6-512.png'
+        alt = "Map" width="50px" height="50px" style = {{position:'absolute', left:'25px', top:'10px'}}/>
+        </button> </div>  */}
+
+        <div>
+        <button onClick={backButtonHandle} id="prevPageButton">Back</button>
+        </div>
 
         <div> <img src='https://c8.alamy.com/comp/C2THCY/coconuts-palm-tree-perspective-view-from-floor-high-up-C2THCY.jpg'
         alt = "Map" width="100" height="130" style = {{position:'absolute', left:'20px', top:'75px',}}/> </div>

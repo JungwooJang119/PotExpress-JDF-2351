@@ -34,6 +34,12 @@ const App = () => {
     }
   }
 
+  const handleBackClick = () => {
+    if (page === 2) {
+      setPage(1);
+    }
+  }
+
   function splitAddress(val) {
     var newAddress = "";
     var pieces = val.split(" ");
@@ -51,7 +57,7 @@ const App = () => {
     if (page === 1) {
       return <Page1 onClickNext={handleClick} addName={setName} addAddress={setAddress}  addState={setstateloc}/>
     } else if (page === 2) {
-      return <SelectPage onClickProceed={handleClick} addStrain={setStrain}/>
+      return <SelectPage onClickProceed={handleClick} addStrain={setStrain} onClickBack={handleBackClick}/>
     } else if (page === 3) {
       return <Page2 onClickBack={handleClick} savedName={inputName} savedStrain={inputStrain} orderNum={order} savedAddress={splitAddress(inputAddress)}
       sellerAddress={"225+North+Avenue+Atlanta,+GA+30332"} currentLocation={inputAddress}
