@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Page1.css'
 import logo from "./Green-2.jpeg"
+import Axios from 'axios'
 
 export const Page1 = ({onClickNext, addName, addAddress, addState}) => { 
+
+    const [inputName, setName] = useState('test');
+    const [inputAddress, setAddress] = useState('test');
+    const [orderList, setOrderList] = useState([]);
 
     function textFunction() {
         addName(document.getElementById("nameBox").value);
         addState(document.getElementById("stateBox").value);
         addAddress(document.getElementById("addressBox").value);
         onClickNext();
+    }
+    const createOrder = () => {
+        Axios.post('http://localhost:3001/api/insert', 
+        {inputName: document.getElementById("nameBox").value, inputAddress: 
+        document.getElementById("addressBox").value});
+        setOrderList([...orderList, {inputName: document.getElementById("nameBox").value, 
+        inputAddress: document.getElementById("addressBox").value}]);
+      };
+    
+      function myFunction(){
+        textFunction();
+        createOrder();
     }
 
     return (
@@ -24,7 +41,7 @@ export const Page1 = ({onClickNext, addName, addAddress, addState}) => {
             alt = "Logo 2" style = {{position:'relative', top:'625px', alignSelf: 'center'}}
             width = "350px" height = "250px"/> </div>
 
-            <div> <button onClick={textFunction} id="nextButton">Select Order</button> </div>
+            <div> <button onClick={myFunction} id="nextButton">Select Order</button> </div>
 
             <div> 
                 <div id="name">Name</div>

@@ -8,9 +8,9 @@ import { SelectPage } from './components/SelectPage'
 const App = () => {
   const [page, setPage] = useState(1);
   // hooks useState and useEffect are my friend
-  const [inputName, setName] = useState('');
-  const [inputStrain, setStrain] = useState('');
-  const [inputAddress, setAddress] = useState('');
+  const [inputName, setName] = useState('test');
+  const [inputStrain, setStrain] = useState('test');
+  const [inputAddress, setAddress] = useState('test');
   const [order, setOrder] = useState(0);
   const [stateloc, setstateloc] = useState('');
 
@@ -34,6 +34,10 @@ const App = () => {
     }
   }
 
+  function myFunction(){
+    handleClick();
+}
+
   function splitAddress(val) {
     var newAddress = "";
     var pieces = val.split(" ");
@@ -49,9 +53,9 @@ const App = () => {
 
   const Screen = () => {
     if (page === 1) {
-      return <Page1 onClickNext={handleClick} addName={setName} addAddress={setAddress}  addState={setstateloc}/>
+      return <Page1 onClickNext={myFunction} addName={setName} addAddress={setAddress}  addState={setstateloc}/>
     } else if (page === 2) {
-      return <SelectPage onClickProceed={handleClick} addStrain={setStrain}/>
+      return <SelectPage onClickProceed={handleClick} addStrain={setStrain} addName={inputName}/>
     } else if (page === 3) {
       return <Page2 onClickBack={handleClick} savedName={inputName} savedStrain={inputStrain} orderNum={order} savedAddress={splitAddress(inputAddress)}
       sellerAddress={"225+North+Avenue+Atlanta,+GA+30332"} currentLocation={inputAddress}
