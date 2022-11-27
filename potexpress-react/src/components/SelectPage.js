@@ -34,7 +34,7 @@ export const SelectPage = ({onClickProceed, addStrain}) => {
 
         <div id="SPAdd">Address:</div>
 
-        <div id="SPAddVal">Doesn't Exist Park Way, Santa Clara County, United States</div>
+        <div id="SPAddVal">225 North Avenue NW, Atlanta, GA</div>
 
         <div id="SPEstimate">Estimated Time Arrival:</div>
 

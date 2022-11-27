@@ -34,13 +34,27 @@ const App = () => {
     }
   }
 
+  function splitAddress(val) {
+    var newAddress = "";
+    var pieces = val.split(" ");
+    for (var i = 0; i < pieces.length; i++) {
+        if (i === 0 || i === pieces.length - 1) {
+            newAddress = newAddress + pieces[i];
+        } else {
+            newAddress = newAddress + "+" + pieces[i];
+        }
+    }
+    return newAddress;
+}
+
   const Screen = () => {
     if (page === 1) {
       return <Page1 onClickNext={handleClick} addName={setName} addAddress={setAddress}  addState={setstateloc}/>
     } else if (page === 2) {
       return <SelectPage onClickProceed={handleClick} addStrain={setStrain}/>
     } else if (page === 3) {
-      return <Page2 onClickBack={handleClick} savedName={inputName} savedStrain={inputStrain} orderNum={order} savedAddress={inputAddress}
+      return <Page2 onClickBack={handleClick} savedName={inputName} savedStrain={inputStrain} orderNum={order} savedAddress={splitAddress(inputAddress)}
+      sellerAddress={"225+North+Avenue+Atlanta,+GA+30332"} currentLocation={inputAddress}
       savedState={stateloc}/>
     } 
     

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Page2.css'
 
-export const Page2 = ({onClickBack, savedName, savedStrain, orderNum, savedAddress, savedState}) => { 
+export const Page2 = ({onClickBack, savedStrain, orderNum, savedAddress, savedState, sellerAddress, currentLocation}) => {
     return (
     <div>
 
@@ -14,12 +14,16 @@ export const Page2 = ({onClickBack, savedName, savedStrain, orderNum, savedAddre
 
         <div id="instructions">You can now go for the pickup. Make sure your GPS is on that that we can update the seller</div>
 
-        <div id="location">You are currently at {savedAddress}, {savedState}</div>
+        <div id="location">You are currently at {currentLocation}</div>
 
         <div  className="map-responsive">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13267.364439122515!2d-84.40470066540244!3d33.76477152936022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1669496934225!5m2!1sen!2sus"
+        <iframe src={"https://www.google.com/maps/embed/v1/directions?key=AIzaSyD19nNLBybj4pKHYGRSDGTUIqCMawgtyJE&origin=" + savedAddress + "&destination=" + sellerAddress}
         width="414" height="448" style={{border:'0'}} loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="map"></iframe>
         </div>
+
+        {/* 555+8th+Street+Northwest,+Atlanta,+GA */}
+        {/* 930+Spring+St+NW,+Atlanta,+GA+30309 */}
+
 
         {/* <div>
             <a href="https://www.google.com/maps/@33.764772,-84.404701,14z"
