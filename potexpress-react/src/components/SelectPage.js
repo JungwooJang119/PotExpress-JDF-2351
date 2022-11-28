@@ -52,8 +52,6 @@ export const SelectPage = ({onClickProceed, addStrain, addName}) => {
 
         <div id="SPEstimateVal">10 minutes</div>
 
-        {/* <div> <button onClick={onClickProceed} id="ProceedButton">Proceed</button> </div> */}
-
         <div id="Box1"></div>
         <div id="Box2"></div>
         <div id="Box3"></div>

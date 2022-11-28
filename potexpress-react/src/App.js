@@ -19,14 +19,6 @@ const App = () => {
       setName('');
       setPage(1);
     } else if (page === 1) {
-      /*
-      if (!inputName) {
-        setPage(3);
-      } else {
-        setOrder(order + 1);
-        setPage(2);
-      }
-      */
       setOrder(order + 1);
       setPage(2);
     } else if (page === 2) {
@@ -62,12 +54,6 @@ const App = () => {
       savedState={stateloc}/>
     } 
     
-    /*
-    else if (page === 3) {
-      return <ErrorPage onClickNext={handleClick} addName={setName} addStrain={setStrain} addAddress={setAddress}
-      savedName={inputName} savedAddress={inputAddress}/>
-    }
-    */
   }
 
   return (

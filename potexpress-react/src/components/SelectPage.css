@@ -59,22 +59,6 @@
     font-size: 20px;
 }
 
-/*
-#ProceedButton {
-    color: white;
-    background-color: #000000;
-    width: 374px;
-    height: 50px;
-    position: absolute;
-    left: 20px;
-    top: 825px;
-    cursor: pointer;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 25px;
-}
-*/
-
 #Box1 {
     position: absolute;
     box-sizing: border-box;
@@ -168,7 +152,8 @@
     width: 100px;
     height: 70px;
     position: absolute;
-    right: 40px;
+    /* right: 40px; */
+    left: 280px;
     top: 540px;
     cursor: pointer;
     border-radius: 15px;
@@ -211,7 +196,8 @@
     width: 100px;
     height: 70px;
     position: absolute;
-    right: 40px;
+    /* right: 40px; */
+    left: 280px;
     top: 795px;
     cursor: pointer;
     border-radius: 15px;
@@ -254,7 +240,8 @@
     width: 100px;
     height: 70px;
     position: absolute;
-    right: 40px;
+    /* right: 40px; */
+    left: 280px;
     top: 1050px;
     cursor: pointer;
     border-radius: 15px;
@@ -297,7 +284,8 @@
     width: 100px;
     height: 70px;
     position: absolute;
-    right: 40px;
+    /* right: 40px; */
+    left: 280px;
     top: 1305px;
     cursor: pointer;
     border-radius: 15px;

@@ -3,10 +3,7 @@ import './Page2.css'
 
 export const Page2 = ({onClickBack, savedStrain, orderNum, savedAddress, savedState, sellerAddress, currentLocation}) => {
     return (
-    <div>
-
-        {/* <div> <img src='https://s1.cdn.autoevolution.com/images/news/google-maps-apparently-told-someone-to-drive-into-a-mango-tree-the-internet-goes-nuts-177726_1.jpg' */}
-        {/* alt = "Map" width="414" height="448"/> </div> */}
+    <div>      
 
         <div> <button onClick={onClickBack} id="backButton">Cancel Order</button> </div>
 
@@ -21,19 +18,6 @@ export const Page2 = ({onClickBack, savedStrain, orderNum, savedAddress, savedSt
         width="414" height="448" style={{border:'0'}} loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="map"></iframe>
         </div>
 
-        {/* 555+8th+Street+Northwest,+Atlanta,+GA */}
-        {/* 930+Spring+St+NW,+Atlanta,+GA+30309 */}
-
-
-        {/* <div>
-            <a href="https://www.google.com/maps/@33.764772,-84.404701,14z"
-            target="_blank" id="MapLink" rel="noreferrer">
-                <img src="https://www.adster.ca/wp-content/uploads/2013/04/google-maps.jpg" alt="Maps"
-                width='50px' height='50px' syle={{left:'100px', right:'100px'}}></img>
-            </a>
-        </div> */}
-
-        {/* &output=embed */}
 
         <div> <img src='https://c8.alamy.com/comp/C2THCY/coconuts-palm-tree-perspective-view-from-floor-high-up-C2THCY.jpg'
         alt = "Map" width="100" height="130" style = {{position:'absolute', left:'20px', top:'670px',}}/> </div>
